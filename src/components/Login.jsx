@@ -9,6 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [emailId, setEmailId] = useState("radha@gmail.com");
   const [password, setPassword] = useState("Radha@123");
+  const [error, setError] = useState("");
 
   const dispatch = useDispatch();
   const handleLogin = async () => {
@@ -26,6 +27,7 @@ const Login = () => {
       navigate("/");
     } catch (error) {
       console.log(error);
+     setError(error.response?.data?.message || "Login failed. invalid credentials.");
     }
   };
   return (
@@ -60,6 +62,13 @@ const Login = () => {
             />
           </label>
         </div>
+        {error && (
+          <div className="alert alert-error shadow-lg mb-4">
+            <div>
+              <span>{error}</span>
+            </div>
+          </div>
+        )}
         <button
           onClick={handleLogin}
           className=" w-full max-w-xs mx-auto bg-secondary hover:bg-secondary-focus text-secondary-content font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline mb-4 text-white"
