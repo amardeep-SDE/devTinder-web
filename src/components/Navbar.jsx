@@ -7,7 +7,7 @@ import { removeUser } from "../utils/userSlice";
 const Navbar = () => {
   const navigate = useNavigate();
   const user = useSelector((store) => store.user.user);
-  console.log(user);
+  // console.log(user);
 
   const dispatch = useDispatch();
   const handleLogout = async () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
       const response = await axios.post(BASE_URL + "/logout", {}, {
         withCredentials: true,
       });
-      console.log(response.data);
+      // console.log(response.data);
       dispatch(removeUser());
       navigate("/login");
     } catch (error) {

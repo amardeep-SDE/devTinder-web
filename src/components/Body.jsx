@@ -15,12 +15,12 @@ const Body = () => {
   const fetchUser = async () => {
 
     if (userData.user) {
-      console.log("User already exists in store:", userData.user);
+      // console.log("User already exists in store:", userData.user);
       return;
     }
   try {
     const response = await axios.get(BASE_URL + "/profile/view", { withCredentials: true });
-    console.log("User data fetched:", response.data);
+    // console.log("User data fetched:", response.data);
     
     dispatch(addUser(response.data));
   } catch (error) {
