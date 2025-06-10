@@ -2,8 +2,9 @@
 
 - Created aVite + React application
 - Remove unnecessary code create a Welcome to My App app
+
 Install Tailwind CSS
-- Install Dasiy UI
+- Install Dasiy UI for UI
 - Add Navbar component to App.jsx
 - Create a Navbar.jsx separate component file
 - Install react router dom
@@ -11,7 +12,7 @@ Install Tailwind CSS
 - Create an Outlet in your Body Component
 - Create a footer
 - Create a Login Page
-- Install axios
+- Install axios for API handle
 - CORS - install cors in backend
 - Whenever uou're making API call so pass axios => {withCredentials: true}
 - Install react-redux + @reduxjs/toolkit
@@ -22,7 +23,7 @@ Install Tailwind CSS
  - Refactor our code to add constants file + create a components folder
  - You should not be access other routes without login
  - If token is not present, redirect user to login page
- - Logout feature
+ - Logout feature Implantation
 
 Body
  - Navbar
