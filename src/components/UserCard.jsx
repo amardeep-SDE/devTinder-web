@@ -2,8 +2,7 @@ import React from "react";
 
 const UserCard = ({ user }) => {
   console.log("UserCard props:", user);
-  const { firstName, lastName, photoUrl, email, about, age, gender } = user;
-//   console.log("UserCard details:", firstName, lastName, photoUrl, email, about);
+  const { firstName, lastName, photoUrl, about, age, gender } = user;
   
 
   return (

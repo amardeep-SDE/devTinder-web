@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import UserCard from "./UserCard";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
