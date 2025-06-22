@@ -4,6 +4,7 @@ import feedReducer from "./feedSlice";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // localStorage
 import connectionReducer from "./connectionSlice";
+import requestReducer from "./requestSlice"
 // Yeh persist config bana rahe hain
 const persistConfig = {
   key: "root", // storage key
@@ -18,6 +19,7 @@ const appStore = configureStore({
     user: persistedUserReducer, // Persisted
     feed: feedReducer,
     connections: connectionReducer,
+    requests: requestReducer
   },
 });
 

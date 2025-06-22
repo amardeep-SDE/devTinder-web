@@ -28,7 +28,8 @@ Install Tailwind CSS
  - Build the user card on feed
  - Edit profile features
  - Show Toast message on save of profile
- - See all my connection
+ - New page - See all my connections
+ - New page - See all my connection Requests
 
 Body
  - Navbar
