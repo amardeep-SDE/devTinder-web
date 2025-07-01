@@ -30,6 +30,10 @@ Install Tailwind CSS
  - Show Toast message on save of profile
  - New page - See all my connections
  - New page - See all my connection Requests
+ - Feature - Accept/Reject connection Request
+ - Send/Ignore the user card from the feed
+ - 
+ - signup new user (left)
 
 Body
  - Navbar
